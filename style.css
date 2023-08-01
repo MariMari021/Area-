@@ -1,0 +1,149 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+     
+}
+
+@font-face {
+    font-family: 'darker';
+    src: url(font/DarkerGrotesque-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'light';
+    src: url(font/DarkerGrotesque-Regular.ttf);
+}
+
+body{
+    background-color:#ADE6D8;
+}
+
+header{
+    display: flex;
+    background-color: #fff;
+    font-family: 'darker';
+    text-align: center;
+    font-size: 37px;
+    width: 100%;
+    height: 80px;
+padding-left: 3%;
+}
+
+header p{
+    padding-top: 10px;
+    padding-left: 1%;
+}
+
+.imagem img{
+    padding-top: 15%;
+    width: 60px;
+
+}
+
+
+
+.geral{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6%;
+    padding-bottom: 10%;
+}
+
+.geral .card img{  
+    width: auto;
+    height: 150px;
+    align-items: center;
+  
+}
+
+.card{
+    width: 240px;
+    height: 316px;
+    border-radius: 20px ;
+    background-color: #fff  ;
+    font-family: 'light';
+    font-weight: 100;
+    font-size: 23px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2%;
+    transition: transform 2.s;
+}
+
+.card h5{
+    margin: 20px;
+}
+
+.total{width: 90%;
+    text-align: justify;
+    
+  
+}
+
+.texto{
+    padding-top: 6% ;
+    padding-left: 12%;
+   font-family: 'light';
+font-size: 25px;
+}
+
+.card:hover{
+transform: scale(1.1);
+box-shadow: 5px 5px 5px 1px rgb(149, 143, 143);
+}
+
+footer{ display: flex;
+    background-color: #fff;
+    font-family: 'darker';
+    text-align: center;
+    font-size: 37px;
+    width: 100%;
+    background-color: #fff;
+    height: 150px;
+    justify-content:center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 400px){
+    .geral{
+        display: grid;
+    }
+
+    .card{
+        margin:20px;
+    }
+
+    input{ 
+      display: none;
+    }
+
+}
+
+@media screen and (min-width:401px) and (max-width: 768px){
+    .geral{
+       flex-wrap: wrap;
+    }
+
+    .card{
+        margin:20px;
+    }
+
+  
+}
+
+
+@media screen and (min-width:768px) and (max-width: 1440px){
+    .geral{
+        flex-wrap: wrap;
+     }
+ 
+     .card{
+         margin:20px 10px;
+     }
+
+  
+}
